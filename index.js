@@ -1,4 +1,5 @@
 // Code your solution here:
 function driversWithRevenueOver(array, number) {
-  array.filter(d => d.revenue > number);
+  const drivers = array.filter(d => d.revenue > number);
+  return drivers;
 }
