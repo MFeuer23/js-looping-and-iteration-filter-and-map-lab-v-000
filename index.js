@@ -5,7 +5,12 @@ function driversWithRevenueOver(array, number) {
 }
 
 function driverNamesWithRevenueOver(array, number) {
-  const drivers = driversWithRevenueOver(array, number)
-  const names = drivers.map(d => d.name)
+  const drivers = driversWithRevenueOver(array, number);
+  const names = drivers.map(d => d.name);
   return names;
+}
+
+function exactMatch(array, attribute) {
+  const match = array.filter(d => d[attribute] === attribute);
+  return match;
 }
